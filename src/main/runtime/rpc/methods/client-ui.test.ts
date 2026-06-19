@@ -51,6 +51,7 @@ describe('client UI RPC methods', () => {
       defaultRepoSelection: ['repo-1', 'repo-2'],
       defaultLinearTeamSelection: ['team-1', 'team-2'],
       experimentalNewWorktreeCardStyle: true,
+      experimentalLargerSidebarSections: true,
       githubProjects: {
         pinned: [],
         recent: [],
@@ -74,6 +75,7 @@ describe('client UI RPC methods', () => {
         visibleTaskProviders: ['github', 'linear'],
         defaultTaskViewPreset: 'my-prs',
         experimentalNewWorktreeCardStyle: true,
+        experimentalLargerSidebarSections: true,
         defaultRepoSelection: settings.defaultRepoSelection,
         defaultLinearTeamSelection: ['team-1', 'team-2'],
         githubProjects: settings.githubProjects
@@ -87,6 +89,7 @@ describe('client UI RPC methods', () => {
       visibleTaskProviders: ['github', 'linear'],
       defaultTaskViewPreset: 'my-prs',
       experimentalNewWorktreeCardStyle: true,
+      experimentalLargerSidebarSections: true,
       defaultRepoSelection: settings.defaultRepoSelection,
       defaultLinearTeamSelection: ['team-1', 'team-2'],
       githubProjects: settings.githubProjects

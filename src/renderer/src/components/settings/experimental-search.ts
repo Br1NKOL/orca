@@ -3,6 +3,7 @@ import { createLocalizedCatalog } from '@/i18n/localized-catalog'
 import { translate } from '@/i18n/i18n'
 import { translateSearchKeyword } from './settings-search-keywords'
 import { getNewWorktreeCardStyleSearchEntry } from './new-worktree-card-style-search-entry'
+import { getLargerSidebarSectionsSearchEntry } from './larger-sidebar-sections-search-entry'
 
 export const getExperimentalPaneSearchEntries = createLocalizedCatalog(
   (): SettingsSearchEntry[] => [
@@ -186,6 +187,7 @@ export const getExperimentalPaneSearchEntries = createLocalizedCatalog(
       ]
     },
     getNewWorktreeCardStyleSearchEntry(),
+    getLargerSidebarSectionsSearchEntry(),
     {
       title: translate(
         'auto.components.settings.experimental.search.78c2a8dc74',
@@ -268,6 +270,12 @@ export function getExperimentalSearchEntry() {
       translate(
         'auto.components.settings.experimental.search.newWorktreeCardStyle.title',
         'New card style'
+      )
+    ),
+    largerSidebarSections: findEntry(
+      translate(
+        'auto.components.settings.experimental.search.largerSidebarSections.title',
+        'Larger sidebar sections'
       )
     ),
     symlinksOnWorktrees: findEntry(
